@@ -23,3 +23,13 @@ go.work.sum
 
 # env file
 .env
+
+/gen1brcdata
+/measurements.txt
+/1brc-*
+
+/cpu.pprof
+/cpu.txt
+/cpu.svg
+/cpu.png
+/small.txt
