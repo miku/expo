@@ -98,3 +98,7 @@ $ perf stat -e branches,branch-misses,cache-references,cache-misses,cycles,instr
        0.539239000 seconds user
        5.314362000 seconds sys
 ```
+
+Note: On MacOS there may be an issue with generating CPU profiles, like it
+[overcounts system calls](https://github.com/golang/go/issues/57722).
+
