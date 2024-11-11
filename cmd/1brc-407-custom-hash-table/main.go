@@ -102,6 +102,7 @@ func R7(fn string, w io.Writer) error {
 				break
 			}
 
+			// parse temperature
 			idx := 0
 			neg := false
 			if after[idx] == '-' {
