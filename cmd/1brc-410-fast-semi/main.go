@@ -64,11 +64,13 @@ func main() {
 }
 
 func R10(fn string, w io.Writer) error {
+	// get file partitions along newlines
 	parts, err := splitFile(fn, runtime.NumCPU())
 	if err != nil {
 		return err
 	}
-	// run one goroutine per part
+
+	// run one goroutine per file split
 	resultC := make(chan map[string]*Stats)
 	for _, part := range parts {
 		go processPart(fn, part, resultC) // XXX: cancellation and wait?
@@ -91,13 +93,14 @@ func R10(fn string, w io.Writer) error {
 		}
 	}
 
-	// Get the names out.
+	// get the names out
 	names := make([]string, 0, len(totals))
 	for station := range totals {
 		names = append(names, station)
 	}
 	sort.Strings(names)
 
+	// render result
 	fmt.Fprint(w, "{")
 	for i, name := range names {
 		if i > 0 {
