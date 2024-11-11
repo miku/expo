@@ -47,8 +47,8 @@ func main() {
 	defer f.Close()
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
-		_ = scanner.Text() // allocate
-		//_ = scanner.Bytes() // does not allocate
+		// _ = scanner.Text() // allocate
+		_ = scanner.Bytes() // does not allocate
 	}
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)

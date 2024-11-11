@@ -77,6 +77,7 @@ Flame graphs from various implementations.
 ```
 $ prog -cpuprofile cpu.pprof
 $ pprof_to_svg.sh # => cpu.svg
+```
 
 
 ### 1brc-000-baseline
