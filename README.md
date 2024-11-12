@@ -6,6 +6,8 @@
 
 > [Slides](Slides.md)
 
+![](static/689145.gif)
+
 ### Abstract
 
 The 1 Billion Row Challenge is a simple, data-intensive task, that nonetheless
