@@ -39,6 +39,7 @@ all: $(TARGETS)
 .PHONY: clean
 clean:
 	rm -f $(TARGETS)
+	rm -f cpu.txt cpu.png cpu.svg cpu.pprof
 
 measurements.txt: gen1brcdata
 	./gen1brcdata > measurements.txt
