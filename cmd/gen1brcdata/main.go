@@ -1,11 +1,4 @@
 // gen1brcdata generates sample data for 1BRC.
-
-// Takes about 3:32 min on an 4/8 core i7-8550U. 1.00G 0:03:32 [4.71M/s],
-// optimized on i7-8565U: 1.00G 0:01:46 [9.39M/s]; optimized on i9-13900T:
-// 1.00G 0:00:12 [83.0M/s].
-//
-// Optimized version: 1.00G 0:02:57 [5.64M/s] (i7-8550u/8), 1.00G 0:00:33
-// [29.5M/s] (Xeon Gold 6326/64), 1.00G 0:00:21 [46.7M/s] (i9-13900T/32)
 //
 // time ./gen1brcdata -n 1_000_000_000 > measurements.txt # 13GB
 package main
