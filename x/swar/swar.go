@@ -75,6 +75,9 @@ func SetPseudoLane(n uint64, v uint16, lane Lane) uint64 {
 	}
 }
 
+// AddUint16Swar performs addition on 4 uint16 values at once, with the
+// limitation that carries are not supported. Cf.
+// https://programming.sirrida.de/swar.html
 func AddUint16Swar(a [4]uint16, b [4]uint16) [4]uint16 {
 	var c, d, e uint64
 	var result [4]uint16
