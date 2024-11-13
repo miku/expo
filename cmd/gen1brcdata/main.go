@@ -75,6 +75,7 @@ func main() {
 func worker(numC chan int, resultC chan string, wg *sync.WaitGroup) {
 	defer wg.Done()
 	var b strings.Builder
+	b.Grow(25165824) // 24MB
 	for n := range numC {
 		b.Reset()
 		for i := 0; i < n; i++ {
