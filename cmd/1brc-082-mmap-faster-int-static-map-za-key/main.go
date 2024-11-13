@@ -30,7 +30,7 @@ var (
 )
 
 const (
-	chunkSize   = 8 * 1024 * 1024 // per-thread file slice
+	chunkSize   = 32 * 1024 * 1024 // per-thread file slice
 	noticeColor = "\033[1;36m%s\033[0m"
 )
 
