@@ -28,24 +28,21 @@ structures, useful operating system facilities and more.
     * generating a flame graph
 * 1BRC problem outline
     * problem description
-* A baseline implementation
-
-Variations:
-
-* Caring about allocations
+* A **baseline** implementation
+* Caring about **allocations**
     * ReadString
     * Scanner
     * Scanner buffer size
-* Faster string parsing
+* Faster **string parsing**
     * splitting a string
     * parsing a float
     * parsing a float with SWAR
-* Parallel processing
+* **Parallel** processing
     * worker pattern
     * splitting the file
-* Using memory-mapped files
+* Using memory-mapped files (**mmap**)
     * simplifying the api
-* Using a custom hash table
+* Using a custom **hash table**
     * custom hash table
 
 Benchmarking mechanics
