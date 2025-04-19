@@ -8,7 +8,7 @@ The 1BRC was a proposed by Gunnar Morling in January 2024, as
 
 It was meant for Java and ran for a month, but became a topic of larger
 interest across various languages. It now has a separate website at
-[https://1brc.dev/](https://1brc.dev/).
+[https://1brc.dev/](http://web.archive.org/web/20241217030337/https://1brc.dev/).
 
 In this workshop, we will learn about:
 
