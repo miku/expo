@@ -38,9 +38,9 @@ Each section includes benchmark results showing the performance characteristics
 and trade-offs of different approaches, with the custom/SWAR implementations
 often showing 4-20x improvements over standard library methods for specific use
 cases.
-
-✻ Crunched for **24m 37s**
 ```
+
+> ✻ Crunched for **24m 37s**
 
 ----
 
