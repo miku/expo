@@ -20,7 +20,8 @@ $ claude --model qwen3-coder-next:latest
 ```
 13 Example Categories:
 
-1. bm - Slice allocation strategies and string search methods (demonstrating pre-allocation benefits and stdlib optimizations)
+1. bm - Slice allocation strategies and string search methods (demonstrating
+   pre-allocation benefits and stdlib optimizations)
 2. extra - Map vs slice access performance
 3. findchar - Semicolon detection methods including SWAR
 4. getpagesize - OS page size querying
