@@ -7,9 +7,16 @@
 $ ollama ps
 NAME                       ID              SIZE     PROCESSOR    CONTEXT    UNTIL
 qwen3-coder-next:latest    ca06e9e4087c    59 GB    100% GPU     192000     3 minutes from now
-```
-...
 
+$ claude --model qwen3-coder-next:latest
+```
+
+> this repo explore performance implications of a number of decisions and demos
+> them with examples, most of which can be found in @x/ analyze the examples
+> and create a short markdown overview of all the examples; write the markdown
+> to @notes/examples.md
+
+```
 13 Example Categories:
 
 1. bm - Slice allocation strategies and string search methods (demonstrating pre-allocation benefits and stdlib optimizations)
@@ -35,7 +42,6 @@ cases.
 ```
 
 ----
-
 
 # Performance Examples Overview
 
